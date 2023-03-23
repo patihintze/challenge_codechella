@@ -1,0 +1,368 @@
+:root {
+    --gradiente-body: linear-gradient(#BFDAE6, #FCF0DD, #FACF9D);
+    --bg-azulescuro: #2E7BA2;
+    --raleway: 'Raleway', sans-serif;
+    --calistoga: 'Calistoga', cursive;
+    --cor-fonteprincipal: #444444;
+    --bg-button-hover: #519EC5;
+    --branco: #FFFFFF;
+    --bg-fonte-dias: #DF9010;
+}
+
+body {
+    background: var(--gradiente-body);
+}
+
+.parte1desktoptablet, .imagebottomdesktop, .imagebottomtablet, .parte1tabletdesktop, .parte2tabletdesktop, .parte3tabletdesktop {
+    display: none;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-azulescuro);
+    position: relative;
+    padding: 32px 24px;
+}
+
+.menumobile {
+    display: flex;
+    align-items: center;
+
+}
+
+.labelmenu {
+    display: flex;
+}
+
+.menuhamburger {
+    width: 1.5em;
+    height: 2.5em;
+    background-image: url("../images/mobile/menu.svg");
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.listamenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 50%;
+    left: 50%;
+    background-color: var(--bg-azulescuro);
+    text-align: center;
+}
+
+.menubotao {
+    display: none;
+}
+
+.menubotao:checked ~ .listamenu {
+    display: block;
+    z-index: 1;
+
+}
+
+.menuitem {
+    padding: 16px;
+    text-align: center;
+}
+
+.menu_item_link {
+    text-decoration: none;
+    color: var(--branco);
+    font-family: var(--raleway);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 50px;
+}
+
+hr {
+    border-width: 1px;
+    border-style: solid;
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    color: var(--branco);
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 41.6px;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    inset: 0px;
+    background-image: url(../images/banner2.png);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: 40%;
+}
+
+.banner h1 {
+    font-family: var(--calistoga);
+    font-weight: 400;
+    font-size: 32px;
+    text-align: center;
+    color: var(--cor-fonteprincipal);   
+}
+
+.parte1, .parte2, .parte3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 1.5em;
+    gap: 2em;
+}
+
+.texto1e3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--raleway);
+    color: var(--cor-fonteprincipal);
+    gap: 24px;
+}
+
+.texto2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--raleway);
+    color: var(--cor-fonteprincipal);
+    gap: 24px;
+}
+
+.texto1e3 h6 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.texto1e3 p{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+
+}
+
+.texto2 h6 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.texto2 p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.logorodape {
+    width: 233.9px;
+    height: 64px;
+}
+
+.rodapeleft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.socialmedia {
+    font-family: var(--raleway);
+    color: var(--cor-fonteprincipal);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 120px;
+}
+
+.rodaperight {
+    font-family: var(--raleway);
+    color: var(--cor-fonteprincipal);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    font-family: var(--raleway);
+    color: var(--cor-fonteprincipal);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+    padding: 24px 24px;
+    text-align: center;
+}
+
+.socialmedia p {
+    line-height: 60px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+
+    .parte1imgmobile, .parte2imgmobile, .parte3imgmobile {
+        display: none;
+    }
+
+    .parte1tabletdesktop, .parte2tabletdesktop, .parte3tabletdesktop {
+        display: block;
+    }
+
+    .menuhamburger {
+        display: none;
+    }
+
+    .listamenu hr {
+        display: none;
+    }
+
+    .cabecalho {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .listamenu {
+        position: static;
+        display: flex;
+        width: 100%;
+        gap: 32px;
+    }
+
+    .banner {
+        height: 24em;
+    }
+
+    .menu_item_link {
+        font-size: 20px;
+    }
+
+    .banner h1 {
+        font-size: 64px;
+        line-height: 83px;
+    }
+
+    .texto1e3, .texto2 {
+        width: 528px;
+    }
+
+    .socialmedia {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .rodaperight br {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    .menuhamburger, .parte1mobile, .imagebottomtablet, .imagebottommobile {
+        display: none;
+    }
+
+    .parte1tabletdesktop, .parte2tabletdesktop, .parte3tabletdesktop {
+        display: block;
+    }
+
+    .cabecalho {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .banner {
+        height: 25.4375em;
+    }
+
+    .parte1, .parte3 {
+        flex-direction: row;
+        padding: 4em 7.5em;
+        gap: 48px;
+    }
+
+    .parte2 {
+        flex-direction: row-reverse;
+    }
+
+    .texto1e3 {
+        text-align: left;
+    }
+
+    .texto2 {
+        text-align: right;
+    }
+
+    .lineup h1 {
+        font-size: 64px;
+    }
+
+    h3::before, h3::after {
+        width: 339.5px;
+        left: -359.5px;
+    }
+
+    h3::after {
+        left: unset;
+        right: -359.5px;
+      }
+
+    .imagebottomdesktop {
+        display: block;
+        width: 100%;
+    }
+
+    .rodape {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 24px 120px;
+    }
+
+    .logorodape {
+        display: flex;
+    }
+
+    .rodaperight br {
+        display: block;
+    }
+
+    .rodaperight {
+        text-align: justify;
+    }
+
+
+
+}
