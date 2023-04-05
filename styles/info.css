@@ -151,7 +151,7 @@ hr {
     align-items: center;
 }
 
-.accordion label + input[type="radio"] {
+.accordion label + input[type="checkbox"] {
     display: none;
 }
 
@@ -162,7 +162,7 @@ hr {
     display: none;
 }
 
-.accordion label + input[type="radio"]:checked + .textofaq {
+.accordion label + input[type="checkbox"]:checked + .textofaq {
     display: block;
 }
 
