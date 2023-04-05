@@ -129,22 +129,11 @@ hr {
     line-height: 41.6px;
     text-align: center;
     color: var(--cor-fonteprincipal);
-    padding: 48px 24px;
+    padding: 48px 24px 0;
 }
 
-.faqlista {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 
-}
-
-.labelfaq {
-    display: flex;
-}
-
-.faqonclick {
+.faq1, .faq2, .faq3, .faq4, .faq5 {
     font-family: var(--raleway);
     color: var(--branco);
     font-size: 32px;
@@ -154,35 +143,28 @@ hr {
     background-color: var(--bg-azulescuro);
     padding: 16px 16px;
     margin: 0 24px;
-    background-image: url("../images/arrow_drop_down.svg");
-    background-position: right;
-    background-repeat: no-repeat;
-    background-origin: content-box;
+    margin-top: 24px;
     display: block;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion label + input[type="radio"] {
+    display: none;
 }
 
 .textofaq {
-    display: none;
     background-color: var(--bg-azulclaro);
     text-align: left;
     position: relative;
-}
-
-
-.faqbotao {
     display: none;
 }
 
-.faqbotao:checked ~ .textofaq {
+.accordion label + input[type="radio"]:checked + .textofaq {
     display: block;
-    z-index: 1;
-
 }
-
-/* .menuitem {
-    padding: 16px;
-    text-align: center;
-} */
 
 .textofaq {
     text-decoration: none;
