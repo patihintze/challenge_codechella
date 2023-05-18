@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingressos</title>
+    <link rel="icon" href="./images/Símbolo-cinza 1.svg">
+    <link rel="stylesheet" href="./styles/tickets.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Raleway:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="index.html"><img class="logoheader" src="./images/tablet/logo-white.svg" alt="logotipo"></a>
+        <div class="menumobile">
+            <input type="checkbox" id="menu" class="menubotao">
+            <label for="menu" class="labelmenu">
+                <span class="menuhamburger"></span>
+            </label>
+            <ul class="listamenu">
+                <li class="menu_item"><a href="experiencia.html" class="menu_item_link">A experiência</a></li>
+                <hr>
+                <li class="menu_item"><a href="mapasetores.html" class="menu_item_link">Mapa de Setores</a></li>
+                <hr>
+                <li class="menu_item"><a href="info.html" class="menu_item_link">Informações</a></li>
+                <hr>
+                <li class="menu_item"><a href="tickets.html" class="menu_item_link">Ingresso</a></li>
+            </ul>
+        </div>
+
+    </header>
+    <main>
+        <section class="banner">
+            <h1>Garanta seu ingresso</h1>
+        </section>
+        <p class="titulo">Preencha o formulário a seguir:  </p>
+        <section class="sectionform">
+            <form action="/yourtickets.html" class="form">
+                <label>Nome completo:</label>
+                <input type="text" name="name" id="name">
+                <label>E-mail:</label>
+                <input type="text" name="email" id="email">
+                <label for="tickets">Tipo de ingresso:</label>
+                <select id="tickets" name="tickets">
+                    <option value="pista">Pista</option>
+                    <option value="premium">Premium</option>
+                    <option value="cadeira">Cadeira</option>
+                    <option value="meiapista">Meia pista</option>
+                    <option value="meiapremium">Meia premium</option>
+                    <option value="meiacadeira">Meia cadeira</option>
+                </select>
+                <label>Data de nascimento:</label>
+                <input type="date" name="data" id="data">
+                <input type="submit" value="Avançar! &#129122;">
+            </form>
+
+        </section>
+
+    </main>
+    <footer class="rodape">
+        <div class="rodapelogo">
+            <img class="logofooter" src="./images/tablet/logo-black.svg" alt="logotipo">
+
+            <section class="socialmedia">
+                <p>Acesse nossas redes: </p>
+                <a href="whatsapp.xyz">
+                    <img src="./images/iconewhatsapp.svg" alt="iconewhatsapp">
+                </a>
+                <a href="twitch.xyz">
+                    <img src="./images/iconetwitch.svg" alt="iconetwitch">
+                </a>
+                <a href="insta.xyz">
+                    <img src="./images/iconeinstagram.svg" alt="iconeinstagram">
+                </a>
+                <a href="twitter.xyz">
+                    <img src="./images/iconetwitter.svg" alt="iconetwitter">
+                </a>
+            </section>
+        </div>
+
+    <p class="rodapedireitos">Desenvolvido por @patihintze.<br> Projeto fictício sem fins comerciais.</p>
+
+    </footer>
+</body>
+</html>
