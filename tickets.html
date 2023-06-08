@@ -40,21 +40,31 @@
         <p class="titulo">Preencha o formulário a seguir:  </p>
         <section class="sectionform">
             <form action="/yourtickets.html" class="form">
-                <label>Nome completo:</label>
-                <input type="text" name="name" id="name">
-                <label>E-mail:</label>
-                <input type="text" name="email" id="email">
-                <label for="tickets">Tipo de ingresso:</label>
-                <select id="tickets" name="tickets">
-                    <option value="pista">Pista</option>
-                    <option value="premium">Premium</option>
-                    <option value="cadeira">Cadeira</option>
-                    <option value="meiapista">Meia pista</option>
-                    <option value="meiapremium">Meia premium</option>
-                    <option value="meiacadeira">Meia cadeira</option>
-                </select>
-                <label>Data de nascimento:</label>
-                <input type="date" name="data" id="data">
+                <div class="form_nome">
+                    <label>Nome completo:</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="form_email">
+                    <label>E-mail:</label>
+                    <input type="text" name="email" id="email">
+                </div>
+                <div class="form_ticketsdata">
+                    <div class="form_tickets">
+                        <label for="tickets">Tipo de ingresso:</label>
+                        <select id="tickets" name="tickets">
+                            <option value="pista">Pista</option>
+                            <option value="premium">Premium</option>
+                            <option value="cadeira">Cadeira</option>
+                            <option value="meiapista">Meia pista</option>
+                            <option value="meiapremium">Meia premium</option>
+                            <option value="meiacadeira">Meia cadeira</option>
+                        </select>
+                    </div>
+                    <div class="form_data">
+                        <label>Data de nascimento:</label>
+                        <input type="date" name="data" id="data">
+                    </div>
+                </div>
                 <input type="submit" value="Avançar! &#129122;">
             </form>
 

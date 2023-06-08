@@ -131,7 +131,11 @@ hr {
     padding: 48px 24px 0;
 }
 
-.form {
+.sectionform {
+    margin: 48px 24px;
+}
+
+.form_nome, .form_email, .form_tickets, .form_data {
     display: flex;
     flex-direction: column;
     font-family: var(--raleway);
@@ -139,12 +143,12 @@ hr {
     font-size: 32px;
     line-height: 37.57px;
     color: var(--cor-fonteprincipal);
-    margin: 48px 24px;
+    margin-top: 38px;
     gap: 8px;
 }
 
 .form input, select {
-    height: 48px;
+    height: 56px;
     font-family: var(--raleway);
     font-size: 20px;
     margin-bottom: 32pxs;
@@ -169,6 +173,7 @@ hr {
     align-self: center;
     margin-top: 32px;
     word-spacing: 16px;
+    margin-inline: auto;    
 }
 
 .button:hover {
@@ -233,6 +238,10 @@ hr {
         padding: 48px 60px 0;
     }
 
+   .form_data {
+        width: 453px;
+    }
+
     .socialmedia {
         display: flex;
         align-items: center;
@@ -261,7 +270,18 @@ hr {
     }
 
     .sectionform {
-        
+        margin: 0 322.5px 0 322.5px;
+    }
+
+    .form_ticketsdata {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .form_tickets, .form_data {
+        width: 24.09375em;
     }
 
     .rodape {
