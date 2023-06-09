@@ -40,16 +40,20 @@
         <p class="titulo">Preencha o formulário a seguir:  </p>
         <section class="sectionform">
             <form action="/yourtickets.html" class="form">
-                <div class="form_nome">
+                <fieldset class="form_nome">
                     <label>Nome completo:</label>
-                    <input type="text" name="name" id="name">
-                </div>
-                <div class="form_email">
+                    <input type="text" name="name" id="name" minlength="3" required>
+                </fieldset>
+                <fieldset class="form_cpf">
+                    <label>CPF:</label>
+                    <input type="text" name="cpf" id="cpf" minlength="11" maxlength="14" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" required>
+                </fieldset>
+                <fieldset class="form_email">
                     <label>E-mail:</label>
-                    <input type="text" name="email" id="email">
-                </div>
-                <div class="form_ticketsdata">
-                    <div class="form_tickets">
+                    <input type="email" name="email" id="email" minlength="4" required>
+                </fieldset>
+                <section class="form_ticketsdata">
+                    <fieldset class="form_tickets">
                         <label for="tickets">Tipo de ingresso:</label>
                         <select id="tickets" name="tickets">
                             <option value="pista">Pista</option>
@@ -59,15 +63,14 @@
                             <option value="meiapremium">Meia premium</option>
                             <option value="meiacadeira">Meia cadeira</option>
                         </select>
-                    </div>
-                    <div class="form_data">
+                    </fieldset>
+                    <fieldset class="form_data">
                         <label>Data de nascimento:</label>
-                        <input type="date" name="data" id="data">
-                    </div>
-                </div>
-                <input type="submit" value="Avançar! &#129122;">
+                        <input type="date" name="data" id="data" required>
+                    </fieldset>
+                </section>
+                <input type="submit" value="Avançar! &#10140;">
             </form>
-
         </section>
 
     </main>
@@ -95,5 +98,6 @@
     <p class="rodapedireitos">Desenvolvido por @patihintze.<br> Projeto fictício sem fins comerciais.</p>
 
     </footer>
+    <script src="../js/script.js" type="module"></script>
 </body>
 </html>

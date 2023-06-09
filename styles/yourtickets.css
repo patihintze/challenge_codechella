@@ -132,7 +132,6 @@ main h6 {
     line-height: 38px;
     text-align: center;
     color: var(--cor-fonteprincipal);
-    padding: 48px 24px 0;
 }
 
 .ingresso {
@@ -145,7 +144,7 @@ main h6 {
 }
 
 .textoingresso {
-    margin-bottom: 32px;
+    padding: 48px 24px 0;
 }
 
 .textoingresso br {
@@ -237,6 +236,7 @@ main h6 {
     .ingresso {
         width: 648px;
         margin: 60px;
+        text-align: center;
     }
 
     .socialmedia {
@@ -280,8 +280,16 @@ main h6 {
         margin: 32px 324px;
     }
 
-    .qrcode {
-        justify-content: left;
+    .qrcode_dados {
+        width: 189px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-align-last: start;
+    }
+
+    .dados h6 {
+        margin-bottom: 24px;
     }
 
     .rodape {

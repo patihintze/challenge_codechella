@@ -135,7 +135,7 @@ hr {
     margin: 48px 24px;
 }
 
-.form_nome, .form_email, .form_tickets, .form_data {
+.form_nome, .form_cpf, .form_email, .form_tickets, .form_data {
     display: flex;
     flex-direction: column;
     font-family: var(--raleway);
