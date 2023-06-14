@@ -147,6 +147,12 @@ hr {
     gap: 8px;
 }
 
+.mensagem-erro {
+    font-size: 18px;
+    font-weight: 500;
+    color: red;
+}
+
 .form input, select {
     height: 56px;
     font-family: var(--raleway);

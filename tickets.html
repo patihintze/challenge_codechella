@@ -39,18 +39,21 @@
         </section>
         <p class="titulo">Preencha o formulário a seguir:  </p>
         <section class="sectionform">
-            <form action="/yourtickets.html" class="form">
+            <form action="/yourtickets.html" class="form" data-formulario>
                 <fieldset class="form_nome">
                     <label>Nome completo:</label>
                     <input type="text" name="name" id="name" minlength="3" required>
+                    <span class="mensagem-erro"></span>
                 </fieldset>
                 <fieldset class="form_cpf">
                     <label>CPF:</label>
                     <input type="text" name="cpf" id="cpf" minlength="11" maxlength="14" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" required>
+                    <span class="mensagem-erro"></span>
                 </fieldset>
                 <fieldset class="form_email">
                     <label>E-mail:</label>
                     <input type="email" name="email" id="email" minlength="4" required>
+                    <span class="mensagem-erro"></span>
                 </fieldset>
                 <section class="form_ticketsdata">
                     <fieldset class="form_tickets">
@@ -67,9 +70,10 @@
                     <fieldset class="form_data">
                         <label>Data de nascimento:</label>
                         <input type="date" name="data" id="data" required>
+                        <span class="mensagem-erro"></span>
                     </fieldset>
                 </section>
-                <input type="submit" value="Avançar! &#10140;">
+                <input type="submit" value="Avançar! &#10140;" data-enviar>
             </form>
         </section>
 
