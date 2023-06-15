@@ -139,8 +139,9 @@ main h6 {
     box-sizing: border-box;
     background: linear-gradient(180deg, #BFDAE6 0%, #FCF0DD 50%, #FACF9D 100%);
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
-    width: 312px;
-    margin: 24px;
+    text-align: center;
+    margin: auto;
+    margin-top: 32px;
 }
 
 .textoingresso {
@@ -235,8 +236,9 @@ main h6 {
 
     .ingresso {
         width: 648px;
-        margin: 60px;
+        margin: auto;
         text-align: center;
+        margin-top: 32px;
     }
 
     .socialmedia {
@@ -277,7 +279,8 @@ main h6 {
     .ingresso {
         width: 792px;
         height: 350px;
-        margin: 32px 324px;
+        margin: auto;
+        margin-top: 32px;
     }
 
     .qrcode_dados {

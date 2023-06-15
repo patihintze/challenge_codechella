@@ -1,5 +1,6 @@
 export default function mostraIngresso(campo) {
-    const dadosFormulario = document.getElementsByName("data-formulario")
+    const dadosFormulario = document.getElementsByClassName(".avancar");
+    console.log(dadosFormulario);
 
 
 }
